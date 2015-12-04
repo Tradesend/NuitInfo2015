@@ -1,0 +1,9 @@
+{% if type_list %}
+    <ul>
+    {% for type in type_list %}
+        <li><a>{{ type.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No types are available.</p>
+{% endif %}
